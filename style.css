@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Center buttons container */
+.center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.center button {
+    border-radius: 10px;
+    min-width: 70px;
+    padding: 0.5rem 1rem;
+    flex: 1 1 auto;
+    max-width: 150px;
+}
+
+/* Input group adjustments */
+.input-group-text {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+}
+
+/* Responsive Styles */
+
+/* Small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .center {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: stretch;
+    }
+
+    .center button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .row > [class*="col-"] {
+        margin-bottom: 0.75rem;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex input{
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .center {
+        gap: 0.75rem;
+    }
+
+    .center button {
+        max-width: 120px;
+    }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+    .center {
+        gap: 1rem;
+    }
+
+    .center button {
+        max-width: 150px;
+    }
+}
