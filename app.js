@@ -14,7 +14,8 @@ btn.addEventListener("click", () => {
         if (timeSec === 0) {
             if (timeMin === 0) {
                 if (timeHr === 0) {
-                    alert("Time's Up!");
+                    const audio = new Audio("./audio/audio.mp3");
+                    audio.play();
                     clearInterval(intervalId);
                     inputSec.value = 0;
                     inputMin.value = 0;
