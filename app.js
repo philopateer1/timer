@@ -5,6 +5,39 @@ const inputSec = document.getElementById("inputSec");
 const inputMin = document.getElementById("inputMin");
 const inputHr = document.getElementById("inputHr");
 
+const date = new Date();
+const dateHours = date.getHours();
+const dateMinutes = date.getMinutes();
+const dateSeconds = date.getSeconds();
+const dateFullHour = `${dateHours}:${dateMinutes}:${dateSeconds}`
+let dateHeader = document.getElementById("currentTime");
+dateHeader.textContent = "Current Time: " + dateFullHour;
+
+const day = date.getDate();
+const month = date.getMonth() + 1;
+const year = date.getFullYear();
+const dateFullDate = `${day}/${month}/${year}`;
+let dateFooter = document.getElementById("currentDate");
+dateFooter.textContent = "Current Date: " + dateFullDate;
+
+
+setInterval(() => {
+    const date = new Date();
+    const dateHours = date.getHours();
+    const dateMinutes = date.getMinutes();
+    const dateSeconds = date.getSeconds();
+    const dateFullHour = `${dateHours}:${dateMinutes}:${dateSeconds}`
+    let dateHeader = document.getElementById("currentTime");
+    dateHeader.textContent = "Current Time: " + dateFullHour;
+
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+    const dateFullDate = `${day}/${month}/${year}`;
+    let dateFooter = document.getElementById("currentDate");
+    dateFooter.textContent = "Current Date: " + dateFullDate;
+}, 1000);
+
 btn.addEventListener("click", () => {
     let timeSec = parseInt(inputSec.value, 10) || 0;
     let timeMin = parseInt(inputMin.value, 10) || 0;
