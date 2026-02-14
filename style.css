@@ -1,10 +1,18 @@
 /* Global Styles */
-body {
+.bodyLight {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
     color: #212529;
+}
+
+.bodyDark{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #252525;
+    color: #ffffff;
 }
 
 .container {
@@ -68,6 +76,35 @@ body {
     .flex input{
         width: 100%;
     }
+}
+
+#lightMode{
+    border-radius: 20%;
+    max-width: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    min-height: 40px;
+    border: none;
+}
+
+#lightMode img{
+    width: 25px;
+    height: 25px;
+}
+
+#darkMode img{
+    width: 25px;
+    height: 25px;
+    
+}
+
+#darkMode{
+    border-radius: 20%;
+    max-width: 40px;
+    min-width: 40px;
+    max-height: 40px;
+    min-height: 40px;
+    border: none;
 }
 
 /* Medium devices (tablets, 576px and up) */
